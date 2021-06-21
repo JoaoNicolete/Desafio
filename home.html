@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dindes</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+	<!-- barra de navegação -->
+	<nav class="navbar navbar-expand-lg navbar-light bggreen">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"> <img src="./assets/img/1.png" alt="logo Dindes" class="wh1 bratius"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Meu perfil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Minhe Dinde</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Amigos</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- /barra de navegação -->
+
+
+	<div class="container">
+		<div class="row d-flex justify-content-start mt-2">
+			<!-- perfil do usuário -->
+			<div class="col-4">
+				<div class="card d-flex justify-content-center p-3" style="width: 18rem;">
+					<img src="./assets/img/WhatsApp Image 2020-11-23 at 16.52.42 (2).jpeg" class="card-img-top"
+						alt="...">
+					<div class="card-body">
+						<h5 class="card-title"> João Pedro</h5>
+						<p class="card-text">Desenvolvedor Java JR | Educador | Conteudista </p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<h5> Minhe Dinde </h5>
+						</li>
+						<li class="list-group-item"><img src="./assets/img/1.png" alt="" class="bratius"> Nome aqui</li>
+						<li class="list-group-item"> Especialista em Desenvolvimento Java</li>
+					</ul>
+					<div class="card-body">
+						<a href="#" class="card-link">Meu perfil </a>
+						<a href="#" class="card-link"> Minhe Dinde</a>
+					</div>
+				</div>
+			</div>
+			<!-- /perfil do usuário -->
+
+			<!-- postagem -->
+			<div class="col-8 justify-content-left">
+				<div class="card pink">
+					<div class="card-body  w-100">
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="form-label">Compartilhe algo </label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+						<div class="btn-group" role="group" aria-label="Basic outlined example">
+							<button type="button" class="btn btn-outline-light">Foto</button>
+							<button type="button" class="btn btn-outline-light">Vídeo</button>
+							<button type="button" class="btn btn-outline-light">Documento</button>
+							<button type="button" class="btn btn-light"> Postar </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
