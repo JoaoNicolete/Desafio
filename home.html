@@ -15,7 +15,7 @@
 <body>
 
 	<!-- barra de navegação -->
-	<nav class="navbar navbar-expand-lg navbar-light bggreen">
+	<nav class="navbar navbar-expand-lg navbar-light bggreen fixed-top mb-5">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"> <img src="./assets/img/1.png" alt="logo Dindes" class="wh1 bratius"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,8 +48,8 @@
 	<!-- /barra de navegação -->
 
 
-	<div class="container">
-		<div class="row d-flex justify-content-start mt-2">
+	<div class="container margemTop">
+		<div class="col-12 d-flex justify-content-center">
 			<!-- perfil do usuário -->
 			<div class="col-4">
 				<div class="card d-flex justify-content-center p-3" style="width: 18rem;">
@@ -67,8 +67,8 @@
 						<li class="list-group-item"> Especialista em Desenvolvimento Java</li>
 					</ul>
 					<div class="card-body">
-						<a href="#" class="card-link">Meu perfil </a>
-						<a href="#" class="card-link"> Minhe Dinde</a>
+						<a href="#" class="card-link text-decoration-none green">Meu perfil </a>
+						<a href="#" class="card-link text-decoration-none green"> Minhe Dinde</a>
 					</div>
 				</div>
 			</div>
@@ -76,26 +76,66 @@
 
 			<!-- postagem -->
 			<div class="col-8 justify-content-left">
-				<div class="card pink">
-					<div class="card-body  w-100">
-						<div class="mb-3">
-							<label for="exampleFormControlTextarea1" class="form-label">Compartilhe algo </label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				<div class="row">
+					<div class="card pink">
+						<div class="card-body  w-100">
+							<div class="mb-3">
+								<label for="exampleFormControlTextarea1" class="form-label">Compartilhe algo </label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<div class="btn-group" role="group" aria-label="Basic outlined example">
+								<button type="button" class="btn btn-outline-light">Foto</button>
+								<button type="button" class="btn btn-outline-light">Vídeo</button>
+								<button type="button" class="btn btn-outline-light">Documento</button>
+								<button type="button" class="btn btn-light"> Postar </button>
+							</div>
 						</div>
-						<div class="btn-group" role="group" aria-label="Basic outlined example">
-							<button type="button" class="btn btn-outline-light">Foto</button>
-							<button type="button" class="btn btn-outline-light">Vídeo</button>
-							<button type="button" class="btn btn-outline-light">Documento</button>
-							<button type="button" class="btn btn-light"> Postar </button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card w-100 p-3 mt-2">
+						<a href="#" class="card-link p-3 text-decoration-none green">
+							<h5> Quem Postou</h5>
+						</a>
+						<img src="./assets/img/trabalho4.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Isso é uma postagem</h5>
+							<p class="card-text">Aqui vai o texto da postagem, as pessoas podem postar o que quiserem
+								aqui.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card w-100 p-3 mt-2">
+						<a href="#" class="card-link p-3 text-decoration-none green">
+							<h5> Quem Postou</h5>
+						</a>
+						<img src="./assets/img/orgulho.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Isso é uma segunda postagem</h5>
+							<p class="card-text">Aqui vai o texto da postagem, as pessoas podem postar o que quiserem
+								aqui.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- divisão -->
+		<hr class="m-3">
+
+		<!-- footer -->
+		<footer>
+			<div class="col-12 d-flex justify-content-center">
+					<a href="https://github.com/JoaoNicolete"> <img src="./assets/img/github.png" alt=""
+							class="wh1"></a>
+					<a href="https://www.linkedin.com/in/jo%C3%A3o-nicolete-ab3453200/"> <img
+							src="./assets/img/linkedin.png" alt="" class="wh1"></a>
+			</div>
+		</footer>
+
 
 	</div>
-
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
