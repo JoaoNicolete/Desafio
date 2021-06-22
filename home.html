@@ -29,18 +29,18 @@
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Meu perfil</a>
+						<a class="nav-link" href="./construcao.html">Meu perfil</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Minhe Dinde</a>
+						<a class="nav-link" href="./construcao.html">Minhe Dinde</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Amigos</a>
+						<a class="nav-link" href="./construcao.html" tabindex="-1" aria-disabled="true">Amigos</a>
 					</li>
 				</ul>
 				<form class="d-flex">
 					<input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Buscar</button>
+					<button class="btn btn-outline-light" type="submit">Buscar</button>
 				</form>
 			</div>
 		</div>
@@ -63,12 +63,12 @@
 						<li class="list-group-item">
 							<h5> Minhe Dinde </h5>
 						</li>
-						<li class="list-group-item"><img src="./assets/img/1.png" alt="" class="bratius"> Nome aqui</li>
-						<li class="list-group-item"> Especialista em Desenvolvimento Java</li>
+						<li class="list-group-item"><img src="./assets/img/mae.jpg" alt="" class="bratius wh3"> Luciana Nicolete</li>
+						<li class="list-group-item"> Onboarding e Customer Success Coordinator no Fretadão</li>
 					</ul>
 					<div class="card-body">
-						<a href="#" class="card-link text-decoration-none green">Meu perfil </a>
-						<a href="#" class="card-link text-decoration-none green"> Minhe Dinde</a>
+						<a href="./construcao.html" class="card-link text-decoration-none green">Meu perfil </a>
+						<a href="./construcao.html" class="card-link text-decoration-none green"> Minhe Dinde</a>
 					</div>
 				</div>
 			</div>
@@ -77,6 +77,7 @@
 			<!-- postagem -->
 			<div class="col-8 justify-content-left">
 				<div class="row">
+					<!-- postar -->
 					<div class="card pink">
 						<div class="card-body  w-100">
 							<div class="mb-3">
@@ -84,13 +85,17 @@
 								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 							</div>
 							<div class="btn-group" role="group" aria-label="Basic outlined example">
-								<button type="button" class="btn btn-outline-light">Foto</button>
-								<button type="button" class="btn btn-outline-light">Vídeo</button>
-								<button type="button" class="btn btn-outline-light">Documento</button>
+								<button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+									data-bs-target="#exampleModal">Foto</button>
+								<button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+								data-bs-target="#exampleModal2">Vídeo</button>
+								<button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+								data-bs-target="#exampleModal3">Documento</button>
 								<button type="button" class="btn btn-light"> Postar </button>
 							</div>
 						</div>
 					</div>
+					<!-- /postar -->
 				</div>
 				<div class="row">
 					<div class="card w-100 p-3 mt-2">
@@ -120,6 +125,74 @@
 				</div>
 			</div>
 		</div>
+		<!-- /postagem -->
+
+		<!-- modal foto -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Foto</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<input class="form-control" type="file" id="formFile">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
+						<button type="button" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal video  -->
+
+		<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Vídeo</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<input class="form-control" type="file" id="formFile">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
+						<button type="button" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal documento -->
+
+		<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Documento</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<input class="form-control" type="file" id="formFile">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
+						<button type="button" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 		<!-- divisão -->
 		<hr class="m-3">
@@ -127,10 +200,9 @@
 		<!-- footer -->
 		<footer>
 			<div class="col-12 d-flex justify-content-center">
-					<a href="https://github.com/JoaoNicolete"> <img src="./assets/img/github.png" alt=""
-							class="wh1"></a>
-					<a href="https://www.linkedin.com/in/jo%C3%A3o-nicolete-ab3453200/"> <img
-							src="./assets/img/linkedin.png" alt="" class="wh1"></a>
+				<a href="https://github.com/JoaoNicolete"> <img src="./assets/img/github.png" alt="" class="wh1"></a>
+				<a href="https://www.linkedin.com/in/jo%C3%A3o-nicolete-ab3453200/"> <img
+						src="./assets/img/linkedin.png" alt="" class="wh1"></a>
 			</div>
 		</footer>
 
